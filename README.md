@@ -111,6 +111,35 @@ editor.destroy();
 
 Open index.html in a browser.
 
+## npm Package
+
+Install:
+
+```bash
+npm install lightweight-editor
+```
+
+Use from CDN via npm package (version-pinned):
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightweight-editor@1.0.0/dist/editor.min.css">
+<script src="https://cdn.jsdelivr.net/npm/lightweight-editor@1.0.0/dist/editor.min.js"></script>
+```
+
+Build minified bundle locally:
+
+```bash
+npm install
+npm run build
+```
+
+Build output:
+
+```text
+dist/editor.min.js
+dist/editor.min.css
+```
+
 ## License
 
 MIT
