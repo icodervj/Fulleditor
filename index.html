@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightweight Editor Demo</title>
+    <title>Fulleditor Demo</title>
     <link rel="stylesheet" href="editor.css">
     <script src="editor.js" defer></script>
 </head>
@@ -23,7 +23,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const output = document.getElementById('output');
 
-            const editor = new LightweightEditor('#editor', {
+            const editor = new Fulleditor('#editor', {
                 placeholder: 'Write your content here...',
                 toolbar: ['bold', 'italic', 'underline', 'strike', 'h2', 'blockquote', 'ul', 'ol', 'link', 'image', 'code', 'undo', 'redo'],
                 imageUpload: async (file) => {

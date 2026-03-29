@@ -32,7 +32,7 @@ https://github.com/sponsors/icodervj
 
 <div id="editor"></div>
 <script>
-    const editor = new LightweightEditor('#editor', {
+    const editor = new Fulleditor('#editor', {
         placeholder: 'Write something...'
     });
 </script>
@@ -48,7 +48,7 @@ Use latest files from the default branch (no version in URL):
 
 <div id="editor"></div>
 <script>
-    const editor = new LightweightEditor('#editor');
+    const editor = new Fulleditor('#editor');
 </script>
 ```
 
@@ -66,7 +66,7 @@ By default, selected images are embedded as Base64 data URLs.
 For production, provide imageUpload(file) that uploads to your backend or cloud storage and returns a final image URL.
 
 ```javascript
-const editor = new LightweightEditor('#editor', {
+const editor = new Fulleditor('#editor', {
     imageUpload: async (file) => {
         const formData = new FormData();
         formData.append('image', file);
@@ -120,7 +120,7 @@ Open index.html in a browser.
 Install:
 
 ```bash
-npm install lightweight-editor
+npm install fulleditor
 ```
 
 Use from CDN via npm package (latest, no version in URL):

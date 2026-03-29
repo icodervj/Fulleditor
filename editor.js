@@ -40,14 +40,14 @@
         redo: 'Redo'
     };
 
-    class LightweightEditor {
+    class Fulleditor {
         constructor(selectorOrElement, options = {}) {
             this.host = typeof selectorOrElement === 'string'
                 ? document.querySelector(selectorOrElement)
                 : selectorOrElement;
 
             if (!this.host) {
-                throw new Error('LightweightEditor host element was not found.');
+                throw new Error('Fulleditor host element was not found.');
             }
 
             this.options = {
@@ -306,5 +306,5 @@
         }
     }
 
-    global.LightweightEditor = LightweightEditor;
+    global.Fulleditor = Fulleditor;
 })(window);
