@@ -40,8 +40,8 @@ After publishing this repository to GitHub, websites can consume the files in tw
 Replace USER and REPO after publishing:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/USER/REPO/editor.css">
-<script src="https://cdn.jsdelivr.net/gh/USER/REPO/editor.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/icodervj/fulleditor/editor.css">
+<script src="https://cdn.jsdelivr.net/gh/icodervj/fulleditor/editor.js"></script>
 
 <div id="editor"></div>
 <script>

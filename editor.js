@@ -1,3 +1,12 @@
+/*!
+ * Fulleditor - A simple, modern WYSIWYG editor built with vanilla JavaScript from 99foundr.
+ * Authors: 
+ * Varun Jain( https://jainvarun.com, @icodervj)
+ * 99foundr ( https://99foundr.com, @99foundr)
+ * Repository: https://github.com/icodervj/fulleditor
+ * License: MIT
+ */
+
 (function (global) {
     const DEFAULT_TOOLBAR = [
         'bold',
