@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightweight Editor Demo</title>
+    <link rel="stylesheet" href="editor.css">
+    <script src="editor.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <h1>Lightweight Editor</h1>
+        <p>
+            A portable, framework-free WYSIWYG editor you can drop into any website.
+            Supports formatting, links, lists, code blocks, keyboard shortcuts, and image upload.
+        </p>
+
+        <div id="editor"></div>
+        <pre id="output" class="demo-output"></pre>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.getElementById('output');
+
+            const editor = new LightweightEditor('#editor', {
+                placeholder: 'Write your content here...',
+                toolbar: ['bold', 'italic', 'underline', 'strike', 'h2', 'blockquote', 'ul', 'ol', 'link', 'image', 'code', 'undo', 'redo'],
+                imageUpload: async (file) => {
+                    // Replace this with an API call that returns a permanent image URL.
+                    return new Promise((resolve, reject) => {
+                        const reader = new FileReader();
+                        reader.onload = () => resolve(reader.result);
+                        reader.onerror = reject;
+                        reader.readAsDataURL(file);
+                    });
+                },
+                onChange: (html) => {
+                    output.textContent = html;
+                }
+            });
+
+            output.textContent = editor.getHTML();
+        });
+    </script>
+</body>
+</html>
