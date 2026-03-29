@@ -1,4 +1,4 @@
-# Lightweight Editor
+#  FullEditor by 99foundr
 
 A lightweight, framework-free WYSIWYG editor that can be embedded in different websites.
 
@@ -13,10 +13,13 @@ A lightweight, framework-free WYSIWYG editor that can be embedded in different w
 - Keyboard shortcuts: Ctrl/Cmd + B, I, U, K
 - Public API: getHTML, setHTML, getText, clear, focus, destroy
 
-## Use This Repo On Any Website
+## Funding
 
-After publishing this repository to GitHub, websites can consume the files in two simple ways.
+Support my opensource work by donating.
+https://github.com/sponsors/icodervj
 
+### How To Use Fulleditor in your website
+ 
 ### Option 1: Copy Files Into Your Project
 
 1. Copy editor.js and editor.css into your website.
