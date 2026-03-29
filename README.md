@@ -37,7 +37,7 @@ After publishing this repository to GitHub, websites can consume the files in tw
 
 ### Option 2: Use GitHub CDN (jsDelivr)
 
-Replace USER and REPO after publishing:
+Use latest files from the default branch (no version in URL):
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/icodervj/fulleditor/editor.css">
@@ -49,10 +49,11 @@ Replace USER and REPO after publishing:
 </script>
 ```
 
-For production, pin to a release tag:
+For smaller payloads, use the minified bundle:
 
 ```text
-https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/editor.js
+https://cdn.jsdelivr.net/gh/icodervj/fulleditor/dist/editor.min.js
+https://cdn.jsdelivr.net/gh/icodervj/fulleditor/dist/editor.min.css
 ```
 
 ## Image Upload
@@ -119,11 +120,11 @@ Install:
 npm install lightweight-editor
 ```
 
-Use from CDN via npm package (version-pinned):
+Use from CDN via npm package (latest, no version in URL):
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightweight-editor@1.0.0/dist/editor.min.css">
-<script src="https://cdn.jsdelivr.net/npm/lightweight-editor@1.0.0/dist/editor.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fulleditor/dist/editor.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fulleditor/dist/editor.min.js"></script>
 ```
 
 Build minified bundle locally:
