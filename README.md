@@ -4,14 +4,16 @@ A lightweight, framework-free WYSIWYG editor that can be embedded in different w
 
 ## Features
 
-- Small footprint and no dependencies
+- Small footprint, securely powered by DOMPurify
 - Rich text commands: bold, italic, underline, strike
 - Headings, blockquotes, lists, and code blocks
 - Link insertion with URL normalization
 - Image insertion from file picker and clipboard paste
 - Custom async image upload handler
-- Keyboard shortcuts: Ctrl/Cmd + B, I, U, K
-- Public API: getHTML, setHTML, getText, clear, focus, destroy
+- Source code mode for raw HTML editing
+- Robust Paste Processing and History Undo/Redo managers
+- Keyboard shortcuts: Ctrl/Cmd + B, I, U, K, Z, Y
+- Public API: getHTML, setHTML, getText, clear, focus, destroy, toggleSourceMode
 
 ## Funding
 
@@ -97,7 +99,7 @@ Supported options:
 Default toolbar actions:
 
 ```text
-bold, italic, underline, strike, h2, blockquote, ul, ol, link, image, code, undo, redo
+bold, italic, underline, strike, h2, blockquote, ul, ol, link, image, code, undo, redo, source
 ```
 
 ## API
@@ -109,6 +111,7 @@ editor.setHTML('<p>Hello</p>');
 editor.clear();
 editor.focus();
 editor.destroy();
+editor.toggleSourceMode();
 ```
 
 ## Local Demo
@@ -135,6 +138,7 @@ Build minified bundle locally:
 ```bash
 npm install
 npm run build
+npm test
 ```
 
 Build output:
