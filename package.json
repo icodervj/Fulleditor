@@ -1,6 +1,6 @@
 {
   "name": "fulleditor",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A lightweight, framework-free WYSIWYG editor for the browser.",
   "license": "MIT",
   "funding": {
@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist && mkdir -p dist",
-    "build:js": "esbuild src/index.js --bundle --outfile=editor.js --format=iife --global-name=Fulleditor && terser editor.js -c -m -o dist/editor.min.js",
+    "build:js": "esbuild src/index.js --bundle --outfile=editor.js --format=iife && terser editor.js -c -m -o dist/editor.min.js",
     "build:css": "cleancss -o dist/editor.min.css editor.css",
     "build": "npm run clean && npm run build:js && npm run build:css",
     "test": "vitest run",
