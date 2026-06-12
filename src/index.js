@@ -15,7 +15,7 @@ const BUTTON_LABELS = {
     bold: 'B', italic: 'I', underline: 'U', strike: 'S',
     h2: 'H2', blockquote: '"', ul: 'UL', ol: 'OL',
     link: 'Link', image: 'Image', code: '</>',
-    undo: 'Undo', redo: 'Redo', source: '{ }'
+    undo: 'Undo', redo: 'Redo', source: 'HTML'
 };
 
 class Fulleditor {

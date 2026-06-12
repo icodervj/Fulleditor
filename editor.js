@@ -1855,7 +1855,7 @@ var Fulleditor = (() => {
     code: "</>",
     undo: "Undo",
     redo: "Redo",
-    source: "{ }"
+    source: "HTML"
   };
   var Fulleditor = class {
     constructor(selectorOrElement, options = {}) {
