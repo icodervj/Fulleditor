@@ -2100,6 +2100,9 @@ var Fulleditor = (() => {
     }
   };
   var index_default = Fulleditor;
+  if (typeof window !== "undefined") {
+    window.Fulleditor = Fulleditor;
+  }
   return __toCommonJS(index_exports);
 })();
 /*! Bundled license information:

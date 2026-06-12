@@ -313,3 +313,7 @@ class Fulleditor {
 }
 
 export default Fulleditor;
+
+if (typeof window !== 'undefined') {
+    window.Fulleditor = Fulleditor;
+}
