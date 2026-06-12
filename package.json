@@ -19,9 +19,10 @@
   ],
   "scripts": {
     "clean": "rm -rf dist && mkdir -p dist",
-    "build:js": "terser editor.js -c -m -o dist/editor.min.js",
+    "build:js": "esbuild src/index.js --bundle --outfile=editor.js --format=iife --global-name=Fulleditor && terser editor.js -c -m -o dist/editor.min.js",
     "build:css": "cleancss -o dist/editor.min.css editor.css",
     "build": "npm run clean && npm run build:js && npm run build:css",
+    "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -35,6 +36,12 @@
   ],
   "devDependencies": {
     "clean-css-cli": "^5.6.3",
-    "terser": "^5.39.0"
+    "esbuild": "^0.28.1",
+    "jsdom": "^29.1.1",
+    "terser": "^5.39.0",
+    "vitest": "^4.1.8"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.10"
   }
 }

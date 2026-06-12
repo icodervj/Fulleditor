@@ -84,6 +84,12 @@ body {
     transform: translateY(0);
 }
 
+.lw-toolbar-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f0f0f0;
+}
+
 .lw-editor {
     min-height: 260px;
     padding: 16px;
